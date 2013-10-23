@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <!-- Title and other stuffs -->
+  <title>Confirmation - MacKart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+  <!-- Stylesheets -->
+  <link href="style/bootstrap.css" rel="stylesheet">
+  <!-- Pretty Photo -->
+  <link href="style/prettyPhoto.css" rel="stylesheet">
+  <!-- Sidebar nav -->
+  <link href="style/sidebar-nav.css" rel="stylesheet">
+  <!-- Flex slider -->
+  <link href="style/flexslider.css" rel="stylesheet">
+  <!-- Font awesome icon -->
+  <link rel="stylesheet" href="style/font-awesome.css"> 
+  <!-- Main stylesheet -->
+  <link href="style/style.css" rel="stylesheet">
+  <!-- Stylesheet for Color -->
+  <link href="style/red.css" rel="stylesheet">
+  <!-- Responsive style (from Bootstrap) -->
+  <link href="style/bootstrap-responsive.css" rel="stylesheet">
+  
+  <!-- HTML5 Support for IE -->
+  <!--[if lt IE 9]>
+  <script src="js/html5shim.js"></script>
+  <![endif]-->
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon/favicon.png">
+</head>
+
+<body>
+
+<!-- Header starts -->
+  <header>
+    <div class="container">
+      <div class="row">
+
+        <div class="span4">
+          <!-- Logo. Use class "color" to add color to the text. -->
+          <div class="logo">
+            <h1><a href="#">Mac<span class="color bold">Kart</span></a></h1>
+            <p class="meta">online shopping is fun!!!</p>
+          </div>
+        </div>
+
+        <div class="span5 offset3">
+          
+          <!-- Search form -->
+          <form class="form-search">
+            <div class="input-append">
+              <input class="span3" id="appendedInputButton" type="text" placeholder="Enter something to search">
+              <button class="btn" type="button">Search</button>
+            </div>
+          </form>
+
+          <div class="hlinks">
+            <span>
+
+              <!-- item details with price -->
+              <a href="#cart" role="button" data-toggle="modal">3 Item(s) in your <i class="icon-shopping-cart"></i></a> -<span class="bold">$25</span>  
+
+            </span>
+
+
+              <!-- Login and Register link -->
+              <span class="lr"><a href="#login" role="button" data-toggle="modal">Login</a> or <a href="#register" role="button" data-toggle="modal">Register</a></span>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- Header ends -->
+
+  <!-- Cart, Login and Register form (Modal) -->
+
+    <!-- Cart Modal starts -->
+<div id="cart" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4>Shopping Cart</h4>
+  </div>
+  <div class="modal-body">
+
+            <table class="table table-striped tcart">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="single-item.html">HTC One</a></td>
+                  <td>2</td>
+                  <td>$250</td>
+                </tr>
+                <tr>
+                  <td><a href="single-item.html">Apple iPhone</a></td>
+                  <td>1</td>
+                  <td>$502</td>
+                </tr>
+                <tr>
+                  <td><a href="single-item.html">Galaxy Note</a></td>
+                  <td>4</td>
+                  <td>$1303</td>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th>Total</th>
+                  <th>$2405</th>
+                </tr>
+              </tbody>
+            </table>
+
+  </div>
+  <div class="modal-footer">
+    <a href="index.html" class="btn">Continue Shopping</a>
+    <a href="checkout.html" class="btn btn-danger">Checkout</a>
+  </div>
+</div>
+
+<!-- Cart modal ends -->
+
+  <!-- Login Modal starts -->
+<div id="login" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4>Login</h4>
+  </div>
+  <div class="modal-body">
+
+                    <div class="form">
+
+                                      <!-- Login form (not working)-->
+                                      <form class="form-horizontal">                                         
+                                          <!-- Username -->
+                                          <div class="control-group">
+                                            <label class="control-label" for="username">Username</label>
+                                            <div class="controls">
+                                              <input type="text" class="input-large" id="username">
+                                            </div>
+                                          </div>
+                                          <!-- Password -->
+                                          <div class="control-group">
+                                            <label class="control-label" for="email">Password</label>
+                                            <div class="controls">
+                                              <input type="password" class="input-large" id="password">
+                                            </div>
+                                          </div>
+                                          <!-- Checkbox -->
+                                          <div class="control-group">
+                                             <div class="controls">
+                                                <label class="checkbox inline">
+                                                   <input type="checkbox" id="inlineCheckbox1" value="agree"> Remember Password
+                                                </label>
+                                             </div>
+                                          </div> 
+                                          
+                                          <!-- Buttons -->
+                                          <div class="form-actions">
+                                             <!-- Buttons -->
+                                            <button type="submit" class="btn">Login</button>
+                                            <button type="reset" class="btn">Reset</button>
+                                          </div>
+                                      </form>
+                                    </div> 
+
+  </div>
+  <div class="modal-footer">
+    <p>Dont have account? <a href="register.html">Register</a> here.</p>
+  </div>
+</div>
+
+<!-- Login modal ends -->
+
+  <!-- Register Modal starts -->
+
+<div id="register" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4>Register</h4>
+  </div>
+  <div class="modal-body">
+    <div class="form">
+                                      <!-- Register form (not working)-->
+                                      <form class="form-horizontal">
+                                          <!-- Name -->
+                                          <div class="control-group">
+                                            <label class="control-label" for="name">Name</label>
+                                            <div class="controls">
+                                              <input type="text" class="input-large" id="name">
+                                            </div>
+                                          </div>   
+                                          <!-- Email -->
+                                          <div class="control-group">
+                                            <label class="control-label" for="email">Email</label>
+                                            <div class="controls">
+                                              <input type="text" class="input-large" id="email">
+                                            </div>
+                                          </div>
+                                          <!-- Select box -->
+                                          <div class="control-group">
+                                            <label class="control-label">Drop Down</label>
+                                            <div class="controls">                               
+                                                <select>
+                                                <option>&nbsp;</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                </select>  
+                                            </div>
+                                          </div>                                           
+                                          <!-- Username -->
+                                          <div class="control-group">
+                                            <label class="control-label" for="username1">Username</label>
+                                            <div class="controls">
+                                              <input type="text" class="input-large" id="username1">
+                                            </div>
+                                          </div>
+                                          <!-- Password -->
+                                          <div class="control-group">
+                                            <label class="control-label" for="password1">Password</label>
+                                            <div class="controls">
+                                              <input type="password" class="input-large" id="password1">
+                                            </div>
+                                          </div>
+                                          <!-- Checkbox -->
+                                          <div class="control-group">
+                                             <div class="controls">
+                                                <label class="checkbox inline">
+                                                   <input type="checkbox" id="inlineCheckbox2" value="agree"> Agree with Terms and Conditions
+                                                </label>
+                                             </div>
+                                          </div> 
+                                          
+                                          <!-- Buttons -->
+                                          <div class="form-actions">
+                                             <!-- Buttons -->
+                                            <button type="submit" class="btn">Register</button>
+                                            <button type="reset" class="btn">Reset</button>
+                                          </div>
+                                      </form>
+                                    </div>
+  </div>
+  <div class="modal-footer">
+    <p>Already have account? <a href="login.html">Login</a> here.</p>
+  </div>
+</div>
+
+<!-- Register modal ends -->
+
+  <!-- Navigation -->
+          <div class="navbar">
+           <div class="navbar-inner">
+             <div class="container">
+               <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+               </a>
+               <div class="nav-collapse collapse">
+                 <ul class="nav">
+                   <li><a href="index.html"><i class="icon-home"></i></a></li>
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="myaccount.html">My Account</a></li>
+                        <li><a href="view-cart.html">View Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="wish-list.html">Wish List</a></li>
+                        <li><a href="order-history.html">Order History</a></li>
+                        <li><a href="edit-profile.html">Edit Profile</a></li>
+                        <li><a href="confirmation.html">Confirmation</a></li>
+                      </ul>
+                   </li>                   
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="general.html">General</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="blog-single.html">Blog Single</a></li>
+                        <li><a href="404.html">404</a></li>
+                      </ul>
+                   </li>
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Smartphones <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="items.html">HTC</a></li>
+                        <li><a href="items.html">Samsung</a></li>
+                        <li><a href="items.html">Apple</a></li>
+                        <li><a href="items.html">Motorola</a></li>
+                        <li><a href="items.html">Nokia</a></li>
+                      </ul>
+                   </li>
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tablets <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="items.html">Samsung</a></li>
+                        <li><a href="items.html">Micromax</a></li>
+                        <li><a href="items.html">Apple</a></li>
+                      </ul>
+                   </li>                                      
+                   <li><a href="support.html">Support</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                 </ul>
+               </div>
+              </div>
+           </div>
+         </div>
+
+
+
+<!-- Account page -->
+
+<div class="items">
+  <div class="container">
+    <div class="row">
+      <!-- Sidebar navigation-->
+      <div class="span3 hidden-phone">
+
+        <h4 class="title">Pages</h4>
+        <!-- Sidebar navigation -->
+          <nav>
+            <ul id="navi">
+              <li><a href="myaccount.html">My Account</a></li>
+              <li><a href="wish-list.html">Wish List</a></li>
+              <li><a href="order-history.html">Order History</a></li>
+              <li><a href="edit-profile.html">Edit Profile</a></li>
+            </ul>
+          </nav>
+
+      </div>
+
+      <div class="span9">
+        <!-- Title -->
+        <h4 class="title">Confirmation</h4>
+
+        <h5>Thanks for buying from MacKart!!</h5>
+        <p>Your Order #id is <strong>43454354</strong>. Say this Order while communicating further.</p>
+        <hr />
+        <!-- Some links -->
+        <div class="horizontal-links">
+          <h5>Take a look around our site</h5>
+          <a href="#">Home</a> <a href="#">About us</a> <a href="#">Support</a> <a href="#">Contact Us</a> <a href="#">Disclaimer</a>
+        </div>
+        <hr />
+        <!-- Search form -->
+        <div class="form">
+          <form method="get" id="searchform" action="#" class="form-search">
+            <input type="text" value="" name="s" id="s" class="input-medium"/>
+            <button type="submit" class="btn">Search</button>
+          </form>
+        </div>
+      </div>                                                                    
+
+
+
+    </div>
+  </div>
+</div>
+
+<!-- Recent items carousel starts -->
+
+<div class="recent-posts">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div class="bor"></div>
+        <h4 class="title">Recent Items</h4>
+        <div class="carousel_nav pull-right">
+          <!-- Navigation -->
+          <a class="prev" id="car_prev" href="#"><i class="icon-chevron-left"></i></a>
+          <a class="next" id="car_next" href="#"><i class="icon-chevron-right"></i></a>
+        </div>
+        <div class="clearfix"></div>
+        <ul class="rps-carousel">
+            <!-- Recent items #1 -->
+            <!-- Each item should be enclosed inside "li"  tag. -->
+            <li>
+                <div class="rp-item"> 
+                  <div class="rp-image">    
+                  <!-- Image -->    
+                    <a href="single-item.html"><img src="img/photos/2.png" alt=""/></a>
+                  </div>
+                  <div class="rp-details">
+                    <!-- Title and para -->
+                    <h5><a href="single-item.html">HTC One V <span class="price pull-right">$225</span></a></h5>
+                    <div class="clearfix"></div>
+                    <!-- Description -->
+                    <p>Travel far away to a space station.</p>         
+                  </div>                
+                </div>        
+            </li>
+            <!-- Recent items #2 -->
+            <li>
+                <div class="rp-item"> 
+                  <div class="rp-image">        
+                    <a href="single-item.html"><img src="img/photos/3.png" alt=""/></a>
+                  </div>
+                  <div class="rp-details">
+                    <!-- Title and para -->
+                    <h5><a href="single-item.html">Sony Xperia Pro <span class="price pull-right">$525</span></a></h5>
+                    <div class="clearfix"></div>
+                    <p>Travel far away to a space station.</p>         
+                  </div>                
+                </div>        
+            </li>
+            <li>
+                <div class="rp-item"> 
+                  <div class="rp-image">        
+                    <a href="single-item.html"><img src="img/photos/4.png" alt=""/></a>
+                  </div>
+                  <div class="rp-details">
+                    <!-- Title and para -->
+                    <h5><a href="single-item.html">Samsung Pop <span class="price pull-right">$255</span></a></h5>
+                    <div class="clearfix"></div>
+                    <p>Travel far away to a space station.</p>         
+                  </div>                
+                </div>        
+            </li>
+            <li>
+                <div class="rp-item"> 
+                  <div class="rp-image">        
+                    <a href="single-item.html"><img src="img/photos/5.png" alt=""/></a>
+                  </div>
+                  <div class="rp-details">
+                    <!-- Title and para -->
+                    <h5><a href="single-item.html">Motorola Droid <span class="price pull-right">$325</span></a></h5>
+                    <div class="clearfix"></div>
+                    <p>Travel far away to a space station.</p>         
+                  </div>                
+                </div>        
+            </li>
+            <li>
+                <div class="rp-item"> 
+                  <div class="rp-image">        
+                    <a href="single-item.html"><img src="img/photos/6.png" alt=""/></a>
+                  </div>
+                  <div class="rp-details">
+                    <!-- Title and para -->
+                    <h5><a href="single-item.html">Blackberry Force <span class="price pull-right">$125</span></a></h5>
+                    <div class="clearfix"></div>
+                    <p>Travel far away to a space station.</p>         
+                  </div>                
+                </div>        
+            </li>
+            <li>
+                <div class="rp-item"> 
+                  <div class="rp-image">        
+                    <a href="single-item.html"><img src="img/photos/7.png" alt=""/></a>
+                  </div>
+                  <div class="rp-details">
+                    <!-- Title and para -->
+                    <h5><a href="single-item.html">Pantech One <span class="price pull-right">$253</span></a></h5>
+                    <div class="clearfix"></div>
+                    <p>Travel far away to a space station.</p>         
+                  </div>                
+                </div>        
+            </li>                                                                                               
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Recent Posts ends -->
+
+<!-- Newsletter starts -->
+
+<div class="container newsletter">
+  <div class="row">
+    <div class="span12">
+      <div class="well">
+               <h5><i class="icon-envelope-alt"></i> Hot Offers - Don't Miss Anything!!!</h5>
+               <p>Nulla facilisi. Sed justo dui, scelerisque ut consectetur vel, eleifend id erat. Morbi auctor adipiscing tempor. Phasellus condimentum rutrum aliquet.</p>
+               <form class="form-inline">
+                  <div class="controls controls-row">
+                    <input class="span3" type="text" placeholder="Enter your email to Subscribe">
+                    <button type="submit" class="btn">Subscribe</button>
+                  </div>
+               </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Newsletter ends -->
+
+<!-- Footer starts -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+
+            <div class="row">
+
+              <div class="span4">
+                <div class="widget">
+                  <h5>Contact</h5>
+                  <hr />
+                    <div class="social">
+                      <a href="#"><i class="icon-facebook facebook"></i></a>
+                      <a href="#"><i class="icon-twitter twitter"></i></a>
+                      <a href="#"><i class="icon-linkedin linkedin"></i></a>
+                      <a href="#"><i class="icon-google-plus google-plus"></i></a> 
+                    </div>
+                  <hr />
+                  <i class="icon-home"></i> &nbsp; 123, Some Area. Los Angeles, CA, 54321.
+                  <hr />
+                  <i class="icon-phone"></i> &nbsp; +239-3823-3434
+                  <hr />
+                  <i class="icon-envelope-alt"></i> &nbsp; <a href="mailto:#">someone@company.com</a>
+                  <hr />
+                  <div class="payment-icons">
+                    <img src="img/payment/americanexpress.gif" alt="" />
+                    <img src="img/payment/visa.gif" alt="" />
+                    <img src="img/payment/mastercard.gif" alt="" />
+                    <img src="img/payment/discover.gif" alt="" />
+                    <img src="img/payment/paypal.gif" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="widget">
+                  <h5>About Us</h5>
+                  <hr />
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. Curabitur pulvinar ornare vulputate scelerisque scelerisque ut consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum.</p> 
+                </div>
+              </div>
+
+              <div class="span4">
+                <div class="widget">
+                  <h5>Links Goes Here</h5>
+                  <hr />
+                  <div class="two-col">
+                    <div class="col-left">
+                      <ul>
+                        <li><a href="#">Condimentum</a></li>
+                        <li><a href="#">Etiam at</a></li>
+                        <li><a href="#">Fusce vel</a></li>
+                        <li><a href="#">Vivamus</a></li>
+                        <li><a href="#">Pellentesque</a></li>
+                        <li><a href="#">Vivamus</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-right">
+                      <ul>
+                        <li><a href="#">Condimentum</a></li>
+                        <li><a href="#">Etiam at</a></li>
+                        <li><a href="#">Fusce vel</a></li>
+                        <li><a href="#">Vivamus</a></li>
+                        <li><a href="#">Pellentesque</a></li>
+                        <li><a href="#">Vivamus</a></li>
+                      </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+            <hr />
+            <!-- Copyright info -->
+            <p class="copy">Copyright &copy; 2012 | <a href="#">Your Site</a> - <a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Service</a> | <a href="#">Contact Us</a></p>
+      </div>
+    </div>
+  <div class="clearfix"></div>
+  </div>
+</footer> 	
+
+<!-- Footer ends -->
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span> 
+
+<!-- JS -->
+<script src="js/jquery.js"></script> <!-- jQuery -->
+<script src="js/bootstrap.js"></script> <!-- Bootstrap -->
+<script src="js/jquery.prettyPhoto.js"></script> <!-- Pretty Photo -->
+<script src="js/filter.js"></script> <!-- Filter for support page -->
+
+<script src="js/jquery.flexslider-min.js"></script> <!-- Flex slider -->
+<script src="js/nav.js"></script> <!-- Sidebar navigation -->
+<script src="js/jquery.carouFredSel-6.1.0-packed.js"></script> <!-- Carousel for recent posts -->
+<script src="js/custom.js"></script> <!-- Custom codes -->
+
+</body>
+</html>

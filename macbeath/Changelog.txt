@@ -1,0 +1,42 @@
+Changelog:
+----------
+
+[*] - Important
+
+Version 2.0:
+-----------
+Updated to Bootstrap 3.0
+
+Version 1.96:
+-------------
+Twitter Feed Removed because of recent Twitter API Update.
+
+Version 1.95:
+------------
+Recent post carousel buy fix (custom.js file).
+
+Version 1.9:
+------------
+Portfolio fix (gallery.html, portfolio1.html, portfolio2.html, custom.js)
+
+Version 1.8:
+-----------
+Layout fix in comingsoon.html. [*]
+Image tag fix in blog-single.html. 
+Image tag fix in index1.html. 
+Label tag fix in login.html. 
+P tag removed in portfolio1.html & portfolio2.html.
+Label tag fix in register.html.
+
+Version 1.5:
+-----------
+404 Page fix (style.css). [*]
+About Page align fix (style.css) [*]
+
+Version 1.2:
+-----------
+Update comments in all HTML files. No change in actual code.
+
+Version 1.0:
+-----------
+Initial release.

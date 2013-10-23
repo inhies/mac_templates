@@ -1,0 +1,48 @@
+Changelog:
+----------
+
+Version 2.2:
+-----------
+Items file column update (items.html).
+Register page form bug fix. (register.html).
+Single item page "Add to cart" input button fix. (single-item.html & style.css)
+View cart page Quantity input box fix. (view-cart.html & style.css)
+
+Version 2.1:
+------------
+Footer ul padding fix.
+
+Version 2:
+----------
+Updated to Bootstrap 3.0.
+
+Version 1.9.1:
+--------------
+Twitter Feed Removed because of recent Twitter API Update.
+
+Version 1.9:
+------------
+Recent items carousel bug fix (custom.js file).
+
+Version 1.8:
+------------
+
+Sidebar Navigation Fix. [*] (nav.js,single-item.html,items.html)
+Typo in index.html ("cass"=>"class"). [*]
+Table heading removed in single-item.html. [*]
+Input and Checkbox ID tag update in all pages. 
+Modal update in all pages.
+Image tag update in blog-single.html, index.html, single-item.html.
+
+Version 1.5:
+------------
+
+Icon height fix (font-awesome.css file). [*]
+FlexSlider caption fix (style.css file). [*]
+Updated comments in all html files. No change the codes. 
+Minor Layout change view-cart.html file in the Discount Coupen section.
+
+Version 1.0:
+-----------
+
+Initial release.

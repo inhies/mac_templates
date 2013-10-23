@@ -1,0 +1,45 @@
+Changelog:
+----------
+
+Version 3.3:
+------------
+Date and Time picker update. (ui.html & style.css).
+
+Version 3.2:
+------------
+Navbar brand color. (style.css)
+Bootstrap toggle plugin updated to Bootstrap switch https://github.com/nostalgiaz/bootstrap-switch. (new js file, new css file, style.css, ui.html, custom.js)
+Mainbar width update for large screens. (style.css)
+
+Version 3.1:
+------------
+Sparkline tooltip fix.
+Navbar Label Update. (all html files and style.css file)
+Header nav pills update. (style.css file)
+
+Version 3.0:
+-----------
+Updated to Bootstrap 3.0.
+Removed Uniform plugin.
+
+Version 2.3:
+-----------
+1. Widget title icons fix. (All html files with widget)
+
+Version 2.2:
+-----------
+1. Sidebar navigation in Tablets fix.
+
+Version 2.0:
+-----------
+1. Added New Widget (widgets.css). [*]
+2. Add new pages (style.css). [*]
+3. Added prettyPhoto lightbox. Included Plugin file in all HTML files. [*]
+4. jQuery Wizard Plugin added in all HTML files to create Wizards. [*]
+4. Sidebar dropdown menu fix. (custom.js) [*]
+3. Progress bar design updated (style.css).
+4. Widget design updated (style.css).
+
+Version 1.0:
+-----------
+Initial Release.
