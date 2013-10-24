@@ -14,21 +14,21 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
 
   <!-- Stylesheets -->
-  <link href="style/bootstrap.css" rel="stylesheet">
+  <link href="/static/style/bootstrap.css" rel="stylesheet">
   <!-- Pretty Photo -->
-  <link href="style/prettyPhoto.css" rel="stylesheet">
+  <link href="/static/style/prettyPhoto.css" rel="stylesheet">
   <!-- Flex slider -->
-  <link href="style/flexslider.css" rel="stylesheet">
+  <link href="/static/style/flexslider.css" rel="stylesheet">
   <!-- Font awesome icon -->
-  <link rel="stylesheet" href="style/font-awesome.css">
+  <link rel="stylesheet" href="/static/style/font-awesome.css">
   <!-- Parallax slider -->
-  <link rel="stylesheet" href="style/slider.css">
+  <link rel="stylesheet" href="/static/style/slider.css">
   <!-- Refind slider -->
-  <link rel="stylesheet" href="style/refineslide.css">  
+  <link rel="stylesheet" href="/static/style/refineslide.css">  
   <!-- Main stylesheet -->
-  <link href="style/style.css" rel="stylesheet">
+  <link href="/static/style/style.css" rel="stylesheet">
   <!-- Stylesheet for Color -->
-  <link href="style/red.css" rel="stylesheet">
+  <link href="/static/style/red.css" rel="stylesheet">
   
   <!-- HTML5 Support for IE -->
   <!--[if lt IE 9]>
@@ -36,15 +36,15 @@
   <![endif]-->
 
   {{range .moreStyles}}
-    <link rel="stylesheet" type="text/css" href="/js/{{.}}">
+    <link rel="stylesheet" type="text/css" href="{{.}}">
   {{end}}
 
   {{range .moreScripts}}
-    <script src="/style/{{.}}" type="text/javascript" charset="utf-8"></script>
+    <script src="{{.}}" type="text/javascript" charset="utf-8"></script>
   {{end}}
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="img/favicon/favicon.png">
+  <link rel="shortcut icon" href="/static/img/favicon/favicon.png">
 </head>
 <body>
 {{end}}
